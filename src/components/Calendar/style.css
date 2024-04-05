@@ -1,0 +1,238 @@
+.container {
+  display: flex;
+  width: 831px;
+  height: 652px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  margin: 0 !important;
+  border-radius: 16px;
+  background: #fff;
+
+  /* default */
+  box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
+}
+
+.title3 {
+  display: flex;
+  align-items: center;
+  .img {
+    margin-right: 15px;
+    width: 23px;
+    height: 20px;
+  }
+  p {
+    width: 706px;
+    height: 18px;
+    margin: 0 auto;
+    color: #344767;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    font-family: Roboto;
+  }
+  span {
+    color: #2275ff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+  }
+}
+
+.calendar-container {
+  width: 791px;
+}
+.fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+  .fc-toolbar-title {
+    width: 120px;
+  }
+}
+.fc-button-group {
+  display: flex;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: #f3f5f9;
+
+  .fc-timeGridDay-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 17px;
+    width: 68px;
+    height: 24px;
+    border-radius: 6px;
+    background-color: #f3f5f9 !important;
+  }
+  .fc-timeGridWeek-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 24px;
+    background-color: #f3f5f9 !important;
+  }
+  .fc-dayGridMonth-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 24px;
+    background-color: #f3f5f9 !important;
+  }
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  border-radius: 6px;
+  background-color: #fff !important;
+  border-color: #fff;
+  color: #344767;
+}
+.fc .fc-button {
+  color: #344767;
+  background-color: #fff;
+  border: #fff;
+  border-color: #fff !important;
+}
+.fc .fc-prev-button {
+  color: #a0aec0;
+  width: 8px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fc .fc-next-button {
+  color: #a0aec0;
+  width: 8px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+}
+
+.fc .fc-icon-bi {
+  color: #a0aec0;
+  width: 22px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fc-toolbar-title {
+  margin: 0 !important;
+  font-size: 14px !important;
+  text-align: center;
+  width: 93px;
+}
+.fc .fc-today-button {
+  height: 14px;
+  color: var(--Dark-grey, #a0aec0);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400px;
+  line-height: 100%; /* 14px */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-left: 13 !important;
+  padding: 0 !important;
+}
+.fc .fc-button-primary:disabled {
+  background-color: #fff;
+  border-color: #fff;
+  color: var(--Dark-grey, #a0aec0);
+}
+.fc .fc-button-primary:hover {
+  background-color: #fff;
+  color: #344767;
+  border-color: #fff;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #344767;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 12px */
+}
+.fc-day {
+  a {
+    color: #344767;
+  }
+}
+
+.fc-daygrid-day-frame {
+  width: 113px;
+  height: 95px;
+}
+
+.fc-dayGridMonth-view {
+  th {
+    border-color: #fff;
+  }
+}
+
+.fc .fc-daygrid-day-top {
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+}
+
+.fc .fc-scrollgrid-liquid {
+  border-color: #fff;
+}
+
+.fc .fc-scrollgrid-section-body table {
+  border: 1px solid;
+}
+
+/* event */
+.fc .fc-daygrid-body-balanced .fc-daygrid-day-events {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+} 
+.fc .fc-daygrid-event-harness {
+  width: 95px;
+  border-radius: 6px;
+  .fc-event-title-container {
+    border-radius: 6px;
+    background: var(
+      --primary,
+      linear-gradient(90deg, #21d4fd 5.6%, #2152ff 96.47%)
+    );
+  }
+}
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
+  border: var(--primary, linear-gradient(90deg, #21d4fd 5.6%, #2152ff 96.47%));
+  border-radius: 6px;
+}
+.fc-event .fc-event-main {
+  border-radius: 6px;
+}
+.fc-event-title-container{
+  text-align: center;
+}
+.fc-direction-ltr .fc-daygrid-more-link{
+  color: #2275FF;
+}
+/* .fc-more-popover {
+  display: none !important;
+} */
